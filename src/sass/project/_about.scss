@@ -1,0 +1,11 @@
+@use '../foundation' as *;
+
+.about__inner {
+  padding:  rem(30)  rem(20);
+}
+
+.about__img {
+  &:not(:last-child) {
+    margin-bottom:  rem(50);
+  }
+}

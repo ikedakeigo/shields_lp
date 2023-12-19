@@ -1,6 +1,6 @@
-@use 'variables' as *;
-@use 'mixin' as *;
-@use 'functions' as *;
+@use "variables" as *;
+@use "mixin" as *;
+@use "functions" as *;
 
 html {
   @if $break-flg == 0 {
@@ -21,7 +21,7 @@ html {
     @media (min-width: $inner) {
       font-size: $base-font-size;
     }
-  }@else{
+  } @else {
     //inner以上
     font-size: $base-font-size;
 
@@ -32,7 +32,7 @@ html {
 
     // 375px〜767px
     @include mq("md") {
-    font-size: $base-font-size;
+      font-size: $base-font-size;
     }
 
     // 375px以下
@@ -58,10 +58,28 @@ a:hover {
     @include mq("md") {
       opacity: 0.8;
     }
-  }@else {
+  } @else {
     opacity: 0.8;
     @include mq("md") {
       opacity: 1;
     }
+  }
+}
+
+img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+}
+
+// レイアウト
+.inner {
+  margin: auto;
+  width: 100%;
+  max-width: 100%;
+  @include mq(md) {
+    max-width: rem(600);
+    padding: 0 rem(25);
+    max-width: rem(1200);
   }
 }

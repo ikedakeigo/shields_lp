@@ -5,15 +5,17 @@ const rename = require("gulp-rename");
 
 // 読み込み先（階層が間違えていると動かないので注意）
 const srcPath = {
-    css: '/src/sass/**/*.scss',
-    img: '/src/img/**/*',
-    html: '/src/*.html',
+    css: 'src/sass/**/*.scss',
+    js: 'src/js/*.js',
+    img: 'src/img/**/*',
+    html: '*.html',
 }
 
 // 吐き出し先（なければ生成される）
 const destPath = {
-    css: '/assets/css/',
-    img: '/assets/img/',
+    css: 'src/assets/css/',
+    js: 'src/assets/js/',
+    img: 'src/assets/img/',
 }
 
 // ブラウザーシンク（リアルタイムでブラウザに反映させる処理）
