@@ -1,0 +1,79 @@
+@use '../foundation' as *;
+
+.works-list {
+    display: grid;
+    gap: prem(40);
+    grid-template-columns: repeat(1, 1fr);
+    counter-reset: number;
+    @include mq(md){
+        row-gap: prem(50);
+        column-gap: prem(24);
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+.works-list__item-img {
+    width: 100%;
+}
+
+.works-list__item-img img {
+    width: 100%;
+    aspect-ratio: 384/400;
+    object-fit: cover;
+}
+
+.works-list__item-number {
+    margin-top: prem(-20);
+    position: relative;
+    font-size: prem(18);
+    line-height: 1;
+    letter-spacing: 0.08em;
+    text-align: center;
+    @include mq(md){
+        font-size: prem(20);
+    }
+
+}
+
+.works-list__item-number::before {
+    content: "";
+    margin-bottom: prem(15);
+    display: block;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 1px;
+    height: prem(40);
+    background: #333;
+    @include mq(md){
+        margin-bottom: prem(20);
+    }
+}
+
+.works-list__item-number::after {
+    counter-increment: number;
+    content: counter(number);
+}
+
+.works-list__item-title {
+    margin-top: prem(15);
+    font-size: prem(20);
+    line-height: 1;
+    letter-spacing: 0.08em;
+    text-align: center;
+    @include mq(md){
+        margin-top: prem(20);
+        font-size: prem(25);
+    }
+}
+
+.works-list__item-text {
+    margin-top: prem(20);
+    font-size: prem(14);
+    line-height: 1.5;
+    letter-spacing: 0.08em;
+    @include mq(md){
+        margin-top: prem(25);
+        font-size: prem(16);
+    }
+}
