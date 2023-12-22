@@ -159,17 +159,180 @@ img {
   }
 }
 
-.contact__inner {
-  padding-top: 38px;
-  padding-top: 2.375rem;
-  padding-bottom: 92px;
-  padding-bottom: 5.75rem;
-  padding-left: 70px;
-  padding-left: 4.375rem;
-  padding-right: 70px;
-  padding-right: 4.375rem;
+/*==================================================
+遅延表示
+===================================*/
+.delay > * {
+  opacity: 0;
 }
 
+/*==================================================
+ふわっ
+===================================*/
+.fadeUp {
+  -webkit-animation-name: fadeUpAnime;
+          animation-name: fadeUpAnime;
+  -webkit-animation-duration: 0.5s;
+          animation-duration: 0.5s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+  -webkit-animation-timing-function: ease-out;
+          animation-timing-function: ease-out;
+  opacity: 0;
+}
+
+@-webkit-keyframes fadeUpAnime {
+  from {
+    opacity: 0;
+    -webkit-transform: translateY(2vw);
+            transform: translateY(2vw);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@keyframes fadeUpAnime {
+  from {
+    opacity: 0;
+    -webkit-transform: translateY(2vw);
+            transform: translateY(2vw);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+.btnAnimation:hover {
+  display: inline-block;
+  opacity: 0.8;
+}
+
+@media screen and (max-width: 838px) {
+  .fadein {
+    opacity: 0;
+    -webkit-transform: translate(0, 100px);
+            transform: translate(0, 100px);
+    -webkit-transition: all 1s;
+    transition: all 1s;
+  }
+  .fadein.active {
+    opacity: 1;
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+  }
+}
+
+.works__inner {
+  margin-bottom: -90px;
+  margin-bottom: -5.625rem;
+}
+@media screen and (min-width: 768px) {
+  .works__inner {
+    margin-bottom: -9.375rem;
+  }
+}
+
+.contact__inner {
+  padding-top: 50px;
+  padding-top: 3.125rem;
+  padding-bottom: 50px;
+  padding-bottom: 3.125rem;
+  padding-left: 20px;
+  padding-left: 1.25rem;
+  padding-right: 20px;
+  padding-right: 1.25rem;
+  position: relative;
+  z-index: 2;
+}
+@media screen and (min-width: 768px) {
+  .contact__inner {
+    padding-top: 2.375rem;
+    padding-bottom: 5.75rem;
+    padding-left: 4.375rem;
+    padding-right: 4.375rem;
+  }
+}
+.contact__inner.pt {
+  padding-top: 20px;
+  padding-top: 1.25rem;
+}
+
+/*===================================
+ * キラキラアニメーション
+===================================*/
+.c-button._effect {
+  display: block;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  overflow: hidden;
+  -webkit-transition: 300ms;
+  transition: 300ms;
+}
+
+.c-button._effect::before {
+  position: absolute;
+  content: "";
+  display: inline-block;
+  top: -180px;
+  left: 0;
+  width: 5%;
+  height: 20%;
+  background-color: #fff;
+  -webkit-transition: 300ms;
+  transition: 300ms;
+  -webkit-animation: effecteffect 2.5s ease-in-out infinite;
+          animation: effecteffect 2.5s ease-in-out infinite;
+}
+
+.c-button._effect:hover {
+  -webkit-transform: translateY(3px);
+          transform: translateY(3px);
+}
+
+@-webkit-keyframes effecteffect {
+  0% {
+    -webkit-transform: scale(0) rotate(45deg);
+    opacity: 0;
+  }
+  80% {
+    -webkit-transform: scale(0) rotate(45deg);
+    opacity: 0.5;
+  }
+  81% {
+    -webkit-transform: scale(4) rotate(45deg);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scale(50) rotate(45deg);
+    opacity: 0;
+  }
+}
+
+@keyframes effecteffect {
+  0% {
+    -webkit-transform: scale(0) rotate(45deg);
+    opacity: 0;
+  }
+  80% {
+    -webkit-transform: scale(0) rotate(45deg);
+    opacity: 0.5;
+  }
+  81% {
+    -webkit-transform: scale(4) rotate(45deg);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scale(50) rotate(45deg);
+    opacity: 0;
+  }
+}
 .about__inner {
   padding: 30px 20px;
   padding: 1.875rem 1.25rem;
@@ -200,36 +363,127 @@ img {
   padding: 0 30px;
   padding: 0 1.875rem;
   position: relative;
+  max-width: 1150px;
 }
 .faq__inner::before {
   content: "";
-  background: url("../img/page/faq_bgTop.png") 0 0 no-repeat;
+  background: url(../img/page/faq_bgTop.svg) no-repeat;
   position: absolute;
-  background-size: contain;
-  height: 100%;
-  max-height: 240px;
-  top: 0;
-  left: 0;
-  -webkit-transform: translateY(-100%);
-          transform: translateY(-100%);
   width: 100%;
-  max-width: 1280px;
+  height: 100%;
+  max-height: 236px;
+  max-height: 14.75rem;
+  top: -224px;
+  top: -14rem;
+  left: 0;
+  background-size: cover;
 }
 .faq__inner::after {
   content: "";
-  background: url("../img/page/faq_bgBottom.png") 0 0 no-repeat;
-  background-size: contain;
-  height: 100%;
-  max-height: 128px;
+  background: url(../img/page/faq_bgTop.svg) no-repeat;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
   position: absolute;
-  bottom: -128px;
-  left: 0;
+  background-size: contain;
   width: 100%;
-  max-width: 1280px;
+  height: 100%;
+  max-height: 236px;
+  max-height: 14.75rem;
+  bottom: -224px;
+  bottom: -14rem;
+  left: 0;
+  background-size: cover;
 }
 @media screen and (min-width: 768px) {
   .faq__inner {
     padding: 0 6.25rem;
+    padding-bottom: 3.125rem;
   }
+}
+
+.p-faq-list__item:not(:last-child) {
+  margin-bottom: 20px;
+  margin-bottom: 1.25rem;
+}
+
+.p-faq-list__item-answer {
+  background-color: #fff;
+  padding: 20px;
+  padding: 1.25rem;
+  border: 1px solid #ff6000;
+  border-radius: 0.5rem;
+  display: none;
+}
+
+.service__inner {
+  margin-top: -90px;
+  margin-top: -5.625rem;
+  margin-bottom: -65px;
+  margin-bottom: -4.0625rem;
+}
+@media screen and (min-width: 400px) {
+  .service__inner {
+    margin-bottom: -6.875rem;
+  }
+}
+@media screen and (min-width: 768px) {
+  .service__inner {
+    margin-top: -9.375rem;
+    margin-bottom: -13.125rem;
+  }
+}
+
+.flow__inner {
+  margin-bottom: -90px;
+  margin-bottom: -5.625rem;
+}
+@media screen and (min-width: 768px) {
+  .flow__inner {
+    margin-bottom: -9.375rem;
+  }
+}
+
+.bottom__inner {
+  margin-top: 50px;
+  margin-top: 3.125rem;
+}
+@media screen and (min-width: 768px) {
+  .bottom__inner {
+    margin-top: 9.375rem;
+  }
+}
+
+.buttons-container {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 0;
+  width: 100%;
+  height: auto;
+  z-index: 100;
+}
+@media screen and (min-width: 768px) {
+  .buttons-container {
+    width: 60%;
+    right: 50%;
+    -webkit-transform: translateX(50%);
+            transform: translateX(50%);
+  }
+}
+
+.follow-btn {
+  padding: 10px 20px;
+  background-color: #fff;
+  -webkit-transition: background-color 0.3s;
+  transition: background-color 0.3s;
+}
+
+.follow-btn:hover {
+  background-color: #0f5ec2;
+  -webkit-transform: translateY(3px);
+          transform: translateY(3px);
 }
 /*# sourceMappingURL=style.css.map */

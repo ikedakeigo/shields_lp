@@ -8,6 +8,7 @@ $breakpoints: null;
 @if $break-flg == 0 {
   $breakpoints: (
     "sm": "screen and (min-width: 400px)",
+    "ssm": "screen and (min-width: 500px)",
     "md": "screen and (min-width: 768px)",
     "lg": "screen and (min-width: 1000px)",
     "xl": "screen and (min-width: 1200px)",
@@ -44,3 +45,5 @@ $base-font-size: 16px;
 // Color
 $color-black:#333;
 $color-red:#e00;
+$color-white:#fff;
+$color-orange: #ff6000;

@@ -16,6 +16,7 @@ const destPath = {
     css: 'src/assets/css/',
     js: 'src/assets/js/',
     img: 'src/assets/img/',
+    html: 'src/*.html',
 }
 
 // ブラウザーシンク（リアルタイムでブラウザに反映させる処理）

@@ -1,8 +1,68 @@
-@use '../foundation' as *;
+@use "../foundation" as *;
+
 
 .contact__inner {
-  padding-top:  rem(38);
-  padding-bottom:  rem(92);
-  padding-left:  rem(70);
-  padding-right:  rem(70);
+  padding-top: rem(50);
+  padding-bottom: rem(50);
+  padding-left: rem(20);
+  padding-right: rem(20);
+  position: relative;
+  z-index: 2;
+  @include mq(md) {
+    padding-top: rem(38);
+    padding-bottom: rem(92);
+    padding-left: rem(70);
+    padding-right: rem(70);
+  }
+
+  &.pt{
+    padding-top: rem(20);
+  }
+}
+
+/*===================================
+ * キラキラアニメーション
+===================================*/
+.c-button._effect {
+  display: block;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  overflow: hidden;
+  transition: 300ms;
+}
+.c-button._effect::before {
+  position: absolute;
+  content: "";
+  display: inline-block;
+  top: -180px;
+  left: 0;
+  width: 5%;
+  height: 20%;
+  background-color: #fff;
+  transition: 300ms;
+  animation: effecteffect 2.5s ease-in-out infinite;
+}
+
+.c-button._effect:hover {
+  transform: translateY(3px);
+}
+
+@keyframes effecteffect {
+  0% {
+    -webkit-transform: scale(0) rotate(45deg);
+    opacity: 0;
+  }
+  80% {
+    -webkit-transform: scale(0) rotate(45deg);
+    opacity: 0.5;
+  }
+  81% {
+    -webkit-transform: scale(4) rotate(45deg);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scale(50) rotate(45deg);
+    opacity: 0;
+  }
 }

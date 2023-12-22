@@ -83,3 +83,57 @@ img {
     max-width: rem(1200);
   }
 }
+
+
+/*==================================================
+遅延表示
+===================================*/
+
+.delay > * {
+  opacity: 0;
+}
+
+/*==================================================
+ふわっ
+===================================*/
+
+.fadeUp {
+  animation-name: fadeUpAnime;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-out;
+  opacity: 0;
+}
+
+@keyframes fadeUpAnime{
+  from {
+    opacity: 0;
+    transform: translateY(2vw);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.btnAnimation {
+  &:hover {
+    display: inline-block;
+    opacity: 0.8;
+    // transform: translate(-6px, -6px);
+  }
+}
+
+.fadein {
+  @media screen and (max-width: 838px) {
+    opacity: 0;
+    transform : translate(0, 100px);
+    transition : all 1s;
+
+    &.active {
+      opacity : 1;
+      transform : translate(0, 0);
+    }
+  }
+}

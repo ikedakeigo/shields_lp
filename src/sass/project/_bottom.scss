@@ -1,0 +1,8 @@
+@use "../foundation" as *;
+
+.bottom__inner {
+  margin-top: rem(50);
+  @include mq(md){
+    margin-top: rem(150);
+  }
+}

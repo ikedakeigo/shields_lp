@@ -1,7 +1,10 @@
 @use '../foundation' as *;
 
 .plan__inner {
-
+//   margin-top: rem(-50);
+//   @include mq(md){
+//     margin-top: rem(-100);
+//  }
 }
 
 .plan__img {

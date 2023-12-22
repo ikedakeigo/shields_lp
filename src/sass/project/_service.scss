@@ -1,0 +1,16 @@
+@use '../foundation' as *;
+
+.service__inner {
+  margin-top: rem(-90);
+  margin-bottom: rem(-65);
+  @include mq(sm){
+    margin-bottom: rem(-110);
+  }
+  @include mq(ssm){
+    // margin-bottom: rem(-210);
+  }
+  @include mq(md){
+    margin-top: rem(-150);
+    margin-bottom: rem(-210);
+  }
+}
