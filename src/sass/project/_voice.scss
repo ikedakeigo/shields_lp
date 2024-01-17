@@ -1,0 +1,32 @@
+@use '../foundation' as *;
+
+.voice__inner {
+  padding-top:  rem(70);
+  padding-bottom:  rem(30);
+  background-color: hsl(47, 100%, 55%);
+  position: relative;
+  &::after{
+    content: "";
+    background: url(../img/page/voice_bgBottom.svg) no-repeat;
+    // -webkit-transform: rotate(180deg);
+    // transform: rotate(180deg);
+    position: absolute;
+    background-size: contain;
+    width: 100%;
+    height: 100%;
+    max-height: 236px;
+    max-height: 14.75rem;
+    bottom:  rem(-140);
+    left: 0;
+    background-size: cover;
+    @include mq(md){
+      bottom:  rem(-224);
+    }
+  }
+}
+
+.about__img {
+  &:not(:last-child) {
+    margin-bottom:  rem(50);
+  }
+}

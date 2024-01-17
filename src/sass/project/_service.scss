@@ -2,9 +2,9 @@
 
 .service__inner {
   margin-top: rem(-90);
-  margin-bottom: rem(-65);
+  margin-bottom: rem(-100);
   @include mq(sm){
-    margin-bottom: rem(-110);
+    margin-bottom: rem(-160);
   }
   @include mq(ssm){
     // margin-bottom: rem(-210);

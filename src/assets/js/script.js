@@ -46,3 +46,32 @@ $(window).scroll(function () {
 $(window).on("load", function () {
   delayScrollAnime(); /* アニメーション用の関数を呼ぶ*/
 }); // ここまで画面が読み込まれたらすぐに動かしたい場合の記述
+
+
+jQuery(function ($) {
+  var service_swiper = new Swiper(".js-voice-swiper", {
+      loop: true,
+      speed: 1000,
+      slidesPerView: 1.5,
+      spaceBetween: 10,
+      centeredSlides: true,
+      autoplay: {
+          delay: 2000,
+          disableOnInteraction: false,
+      },
+      breakpoints: {
+          768: {
+              slidesPerView: 1.5,
+              spaceBetween: 30
+          }
+      },
+      pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+      },
+      navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+      },
+  });
+});

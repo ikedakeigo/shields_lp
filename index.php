@@ -5,19 +5,20 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="format-detection" content="telephone=no" />
   <title>退職代行サービス</title>
-  <meta name="description" content="トップページの説明" />
-  <meta name="keywords" content="キーワード" />
+  <meta name="description" content="転職もサポートする退職代行" />
+  <meta name="keywords" content="転職 退職 退職代行" />
   <!-- ogp -->
-  <meta property="og:title" content="サイト名" />
+  <meta property="og:title" content="退職代行サービス" />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="サイトのドメイン" />
   <meta property="og:image" content="OGP IMAGE" />
   <meta property="og:site_name" content="サイトのドメイン" />
-  <meta property="og:description" content="トップページの説明" />
+  <meta property="og:description" content="転職もサポートする退職代行" />
   <!-- ファビコン -->
   <link rel="”icon”" href="">
   <link rel="apple-touch-icon" href="">
   <!-- CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
   <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/src/assets/css/style.css">
 </head>
 <body>
@@ -39,10 +40,43 @@
   </div>
 </section>
 
-<section class="voice delay">
+<section class="voice layout delay">
   <div class="voice__inner inner">
-    <div class="voice__img">
-      <img src="<?php echo get_template_directory_uri() ?>/src/assets/img/page/customer_voice.png" alt="" />
+    <h2 class="p-voice__title">
+      <img src="<?php echo get_template_directory_uri() ?>/src/assets/img/page/voice_tittle.png" alt="">
+    </h2>
+    <div class="p-voice">
+      <div class="p-voice__inner">
+        <div class="p-voice__swiper p-voice-swiper">
+          <div class="swiper js-voice-swiper">
+            <ul class="swiper-wrapper">
+              <li class="swiper-slide">
+                <img src="<?php echo get_template_directory_uri() ?>/src/assets/img/page/voice_01.png" alt="お客様の声" />
+              </li>
+              <li class="swiper-slide">
+                <img src="<?php echo get_template_directory_uri() ?>/src/assets/img/page/voice_02.png" alt="お客様の声" />
+              </li>
+              <li class="swiper-slide">
+                <img src="<?php echo get_template_directory_uri() ?>/src/assets/img/page/voice_03.png" alt="お客様の声" />
+              </li>
+              <li class="swiper-slide">
+                <img src="<?php echo get_template_directory_uri() ?>/src/assets/img/page/voice_04.png" alt="お客様の声" />
+              </li>
+              <li class="swiper-slide">
+                <img src="<?php echo get_template_directory_uri() ?>/src/assets/img/page/voice_05.png" alt="お客様の声" />
+              </li>
+              <li class="swiper-slide">
+                <img src="<?php echo get_template_directory_uri() ?>/src/assets/img/page/voice_06.png" alt="お客様の声" />
+              </li>
+            </ul>
+          </div>
+          <div class="swiper-pagination"></div>
+          <div class="p-voice-swiper__button-wrap">
+            <div class="swiper-button-prev js-voice-arrow"></div>
+            <div class="swiper-button-next js-voice-arrow"></div>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </section>
@@ -185,19 +219,7 @@
           お気軽にご相談くださいませ（可能かどうかは会社側の就業規則や判断となります）
         </p>
       </li>
-      <li class="p-faq-list__item">
-        <p class="p-faq-list__item-question js-faq-question">
-          <img src="<?php echo get_template_directory_uri() ?>/src/assets/img/page/q1.png" alt="" />
-        </p>
-        <p class="p-faq-list__item-answer">
-          <span>A.</span>
-          テキストテキストテキストテキストテキストテキストテキストテキストテキスト テキストテキストテキストテキストテキストテキストテキストテキストテキスト テキストテキストテキストテキストテキストテキストテキストテキストテキスト
-          テキストテキストテキストテキストテキストテキストテキストテキストテキスト テキストテキストテキストテキストテキストテキストテキストテキストテキスト テキストテキストテキストテキストテキストテキストテキストテキストテキスト
-          テキストテキストテキストテキストテキストテキストテキストテキストテキスト テキストテキストテキストテキストテキストテキストテキストテキストテキスト テキストテキストテキストテキストテキストテキストテキストテキストテキスト
-          テキストテキストテキストテキストテキストテキストテキストテキストテキスト テキストテキストテキストテキストテキストテキストテキストテキストテキスト テキストテキストテキストテキストテキストテキストテキストテキストテキスト
-          テキストテキストテキストテキストテキストテキストテキストテキストテキスト テキストテキストテキストテキストテキストテキストテキストテキストテキスト テキストテキストテキストテキストテキストテキストテキストテキストテキスト
-        </p>
-      </li>
+
     </ul>
   </div>
 </section>
@@ -233,6 +255,7 @@
 
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
 <script src="<?php echo get_template_directory_uri() ?>/src/assets/js/script.js"></script>
 </body>
 </html>

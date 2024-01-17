@@ -74,16 +74,22 @@ img {
 
 // レイアウト
 .inner {
-  margin: auto;
+  margin: 0 auto;
   width: 100%;
   max-width: 100%;
   @include mq(md) {
-    max-width: rem(600);
-    padding: 0 rem(25);
-    max-width: rem(1200);
+    max-width: rem(950);
+    // padding: 0 rem(25);
+    // max-width: rem(1200);
   }
 }
 
+.layout {
+  margin-bottom: rem(50);
+  @include mq(md) {
+    margin-bottom: rem(100);
+  }
+}
 
 /*==================================================
 遅延表示
@@ -106,7 +112,7 @@ img {
   opacity: 0;
 }
 
-@keyframes fadeUpAnime{
+@keyframes fadeUpAnime {
   from {
     opacity: 0;
     transform: translateY(2vw);
@@ -128,12 +134,12 @@ img {
 .fadein {
   @media screen and (max-width: 838px) {
     opacity: 0;
-    transform : translate(0, 100px);
-    transition : all 1s;
+    transform: translate(0, 100px);
+    transition: all 1s;
 
     &.active {
-      opacity : 1;
-      transform : translate(0, 0);
+      opacity: 1;
+      transform: translate(0, 0);
     }
   }
 }
