@@ -10,9 +10,9 @@
   <!-- ogp -->
   <meta property="og:title" content="退職代行サービス" />
   <meta property="og:type" content="website" />
-  <meta property="og:url" content="サイトのドメイン" />
+  <meta property="og:url" content="nexus-g5.com/" />
   <meta property="og:image" content="OGP IMAGE" />
-  <meta property="og:site_name" content="サイトのドメイン" />
+  <meta property="og:site_name" content="nexus-g5.com/" />
   <meta property="og:description" content="転職もサポートする退職代行" />
   <!-- ファビコン -->
   <link rel="”icon”" href="">
@@ -40,10 +40,11 @@
   </div>
 </section>
 
+
 <section class="voice layout delay">
   <div class="voice__inner inner">
     <h2 class="p-voice__title">
-      <img src="<?php echo get_template_directory_uri() ?>/src/assets/img/page/voice_tittle.png" alt="">
+      <img src="<?php echo get_template_directory_uri() ?>/src/assets/img/page/voice_title.png" alt="">
     </h2>
     <div class="p-voice">
       <div class="p-voice__inner">

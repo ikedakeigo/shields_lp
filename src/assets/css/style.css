@@ -875,6 +875,11 @@ img {
   background-color: hsl(47, 100%, 55%);
   position: relative;
 }
+@media screen and (min-width: 768px) {
+  .voice__inner {
+    max-width: 100%;
+  }
+}
 .voice__inner::after {
   content: "";
   background: url(../img/page/voice_bgBottom.svg) no-repeat;
@@ -882,7 +887,6 @@ img {
   background-size: contain;
   width: 100%;
   height: 100%;
-  max-height: 236px;
   max-height: 236px;
   max-height: 14.75rem;
   bottom: -140px;
@@ -893,6 +897,13 @@ img {
 @media screen and (min-width: 768px) {
   .voice__inner::after {
     bottom: -14rem;
+    max-height: 15.75rem;
+  }
+}
+@media screen and (min-width: 768px) {
+  .voice__inner h2 {
+    max-width: 59.375rem;
+    margin: 0 auto;
   }
 }
 
