@@ -404,6 +404,26 @@ img {
   }
 }
 
+.l-introduction {
+  margin-bottom: 120px;
+  margin-bottom: 7.5rem;
+}
+@media screen and (min-width: 768px) {
+  .l-introduction {
+    margin-bottom: 15.625rem;
+  }
+}
+
+.l-greeting {
+  margin-bottom: 150px;
+  margin-bottom: 9.375rem;
+}
+@media screen and (min-width: 768px) {
+  .l-greeting {
+    margin-bottom: 21.875rem;
+  }
+}
+
 .works__inner {
   background-color: #ffee62;
   padding: 0 30px;
@@ -1139,5 +1159,45 @@ img {
 .about__img:not(:last-child) {
   margin-bottom: 50px;
   margin-bottom: 3.125rem;
+}
+
+.introduction__inner {
+  margin-bottom: -90px;
+  margin-bottom: -5.625rem;
+}
+@media screen and (min-width: 768px) {
+  .introduction__inner {
+    margin-bottom: -9.375rem;
+  }
+}
+
+.introduction__img {
+  max-width: 100%;
+}
+@media screen and (min-width: 768px) {
+  .introduction__img {
+    max-width: 31.25rem;
+    margin: 0 auto;
+  }
+}
+
+.greeting__inner {
+  margin-bottom: -90px;
+  margin-bottom: -5.625rem;
+}
+@media screen and (min-width: 768px) {
+  .greeting__inner {
+    margin-bottom: -9.375rem;
+  }
+}
+
+.greeting__img {
+  max-width: 100%;
+}
+@media screen and (min-width: 768px) {
+  .greeting__img {
+    max-width: 31.25rem;
+    margin: 0 auto;
+  }
 }
 /*# sourceMappingURL=style.css.map */

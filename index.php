@@ -149,6 +149,22 @@
   </div>
 </section>
 
+<section class="introduction delay l-introduction">
+  <div class="introduction__inner inner">
+    <div class="introduction__img">
+      <img src="<?php echo get_template_directory_uri() ?>/src/assets/img/page/introduction.png" alt="" />
+    </div>
+  </div>
+</section>
+
+<section class="greeting delay l-greeting">
+  <div class="greeting__inner inner">
+    <div class="greeting__img">
+      <img src="<?php echo get_template_directory_uri() ?>/src/assets/img/page/greeting.png" alt="" />
+    </div>
+  </div>
+</section>
+
 <section class="faq delay l-faq">
   <div class="faq__inner inner">
     <h2 class="p-faq__title">
