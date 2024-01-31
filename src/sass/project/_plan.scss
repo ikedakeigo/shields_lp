@@ -1,26 +1,58 @@
-@use '../foundation' as *;
+@use "../foundation" as *;
 
 .plan__inner {
-  margin-top: rem(30);
-  @include mq(sm){
-    margin-top: rem(30);
+  @include mq(md) {
+    padding-bottom: rem(100);
   }
-  @include mq(md){
-    margin-top: rem(30);
- }
-}
+  background-color: #ffee62;
+  padding: 0 rem(30);
+  padding-bottom: rem(50);
+  margin-bottom: rem(20);
+  position: relative;
+  max-width: 100%;
+  width: 100%;
 
-.plan__img {
-  &:not(:last-child) {
-    margin-bottom:  rem(50);
+  &::before {
+    content: "";
+    background: url(../img/page/works_bgTop.png) no-repeat;
+    position: absolute;
+    width: 100%;
+    display: block;
+    padding-top: aspect(1000, 195);
+    background-size: cover;
+    background-position: center;
+    top: 0;
+    left: 0;
+    transform: translateY(-95%);
+    z-index: -1;
   }
 
   &:nth-of-type(2) {
-    padding: 0  rem(20);
+    background-color: #fff;
+    &::before {
+      display: none;
+    }
+    @include mq(md) {
+      padding-bottom: 0;
+    }
   }
-  &:nth-of-type(3) {
-    padding: 0  rem(20);
-    padding-bottom:  rem(20);
+}
+
+.plan__img {
+  max-width: 100%;
+  @include mq(md) {
+    max-width: rem(500);
+    margin: 0 auto;
+  }
+  &:not(:last-child) {
+    margin-bottom: rem(50);
   }
 
+  &:nth-of-type(2) {
+    padding: 0 rem(20);
+  }
+  &:nth-of-type(3) {
+    padding: 0 rem(20);
+    padding-bottom: rem(20);
+  }
 }

@@ -5,4 +5,46 @@
   @include mq(md){
     margin-bottom: rem(-150);
   }
+
+  background-color: hsl(47, 100%, 55%);
+  padding: 0 rem(30);
+  position: relative;
+  max-width: 100%;
+  width: 100%;
+  &::before {
+    content: "";
+    background: url(../img/page/voice_bgBottom.png) no-repeat;
+    position: absolute;
+    width: 100%;
+    display: block;
+    padding-top: aspect(1000, 195);
+    background-size: cover;
+    background-position: center;
+    top: 0;
+    left: 0;
+    transform: rotate(180deg)  translateY(95%);
+    z-index: -1;
+  }
+  &::after {
+    content: "";
+    background: url(../img/page/voice_bgBottom.png) no-repeat;
+    padding-top: aspect(1000, 195);
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    background-size: cover;
+    background-position: center;
+    transform: translateY(95%);
+    z-index: -1;
+  }
+}
+
+
+.flow__img {
+  max-width: 100%;
+  @include mq(md) {
+    max-width: rem(500);
+    margin: 0 auto;
+  }
 }

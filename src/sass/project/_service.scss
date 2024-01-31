@@ -1,16 +1,52 @@
 @use '../foundation' as *;
 
 .service__inner {
-  margin-top: rem(-90);
-  margin-bottom: rem(-100);
+  // margin-bottom: rem(-100);
   @include mq(sm){
-    margin-bottom: rem(-160);
-  }
-  @include mq(ssm){
-    // margin-bottom: rem(-210);
+    // margin-bottom: rem(-160);
   }
   @include mq(md){
-    margin-top: rem(-150);
-    margin-bottom: rem(-210);
+    // margin-bottom: rem(-210);
+  }
+  background-color: #fff7b5;
+  padding: 0 rem(30);
+  position: relative;
+  max-width: 100%;
+  width: 100%;
+  &::before {
+    content: "";
+    background: url(../img/page/service_bgTop.png) no-repeat;
+    position: absolute;
+    width: 100%;
+    display: block;
+    padding-top: aspect(1000, 195);
+    background-size: cover;
+    background-position: center;
+    top: 0;
+    left: 0;
+    transform: translateY(-95%);
+    z-index: -1;
+  }
+  &::after {
+    content: "";
+    background: url(../img/page/service_bgTop.png) no-repeat;
+    padding-top: aspect(1000, 195);
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    background-size: cover;
+    background-position: center;
+    transform: rotate(180deg) translateY(-95%);
+    z-index: -1;
+  }
+}
+
+
+.service__img {
+  max-width: 100%;
+  @include mq(md) {
+    max-width: rem(500);
+    margin: 0 auto;
   }
 }

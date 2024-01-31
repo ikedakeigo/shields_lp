@@ -82,7 +82,7 @@
   </div>
 </section>
 
-<section class="about delay">
+<section class="about delay l-about">
   <div class="about__inner inner">
     <div class="about__img">
       <img src="<?php echo get_template_directory_uri() ?>/src/assets/img/page/what.png" alt="" />
@@ -93,10 +93,10 @@
   </div>
 </section>
 
-<section class="works delay">
+<section class="works delay l-works">
   <div class="works__inner inner">
     <div class="works__img">
-      <img src="<?php echo get_template_directory_uri() ?>/src/assets/img/page/strong_point.png" alt="" />
+      <img src="<?php echo get_template_directory_uri() ?>/src/assets/img/page/strong_point.png" alt="">
     </div>
   </div>
 </section>
@@ -109,7 +109,7 @@
   </div>
 </section>
 
-<section class="service delay">
+<section class="service delay l-service">
   <div class="service__inner inner">
     <div class="service__img">
       <img src="<?php echo get_template_directory_uri() ?>/src/assets/img/page/service_quality.png" alt="" />
@@ -117,11 +117,13 @@
   </div>
 </section>
 
-<section class="plan delay">
+<section class="plan delay l-plan">
   <div class="plan__inner inner">
     <div class="plan__img">
       <img src="<?php echo get_template_directory_uri() ?>/src/assets/img/page/possible.png" alt="" />
     </div>
+  </div>
+  <div class="plan__inner inner">
     <div class="plan__img">
       <img src="<?php echo get_template_directory_uri() ?>/src/assets/img/page/comparison_chart.png" alt="" />
     </div>
@@ -131,7 +133,7 @@
   </div>
 </section>
 
-<section class="flow delay">
+<section class="flow delay l-flow">
   <div class="flow__inner inner">
     <div class="flow__img">
       <img src="<?php echo get_template_directory_uri() ?>/src/assets/img/page/flow.png" alt="" />
@@ -147,7 +149,7 @@
   </div>
 </section>
 
-<section class="faq delay">
+<section class="faq delay l-faq">
   <div class="faq__inner inner">
     <h2 class="p-faq__title">
       <img src="<?php echo get_template_directory_uri() ?>/src/assets/img/page/faq_title.png" alt="" />
@@ -233,7 +235,7 @@
   </div>
 </section>
 
-<section class="contact delay">
+<section class="contact delay c-bottom">
   <div class="contact__inner inner">
     <a href="" class="contact__btn c-button _effect">
       <img src="<?php echo get_template_directory_uri() ?>/src/assets/img/common/linebutton.png" alt="" />

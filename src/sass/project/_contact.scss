@@ -1,6 +1,10 @@
 @use "../foundation" as *;
 
-
+.c-bottom {
+  @include mq(md) {
+    padding-bottom: rem(100);
+  }
+}
 .contact__inner {
   padding-top: rem(50);
   padding-bottom: rem(50);
@@ -8,14 +12,8 @@
   padding-right: rem(20);
   position: relative;
   z-index: 2;
-  @include mq(md) {
-    padding-top: rem(38);
-    padding-bottom: rem(92);
-    padding-left: rem(70);
-    padding-right: rem(70);
-  }
 
-  &.pt{
+  &.pt {
     padding-top: rem(20);
   }
 }
