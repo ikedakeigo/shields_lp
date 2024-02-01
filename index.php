@@ -84,10 +84,10 @@
 
 <section class="about delay l-about">
   <div class="about__inner inner">
-    <div class="about__img">
+    <div class="about__img l-img">
       <img src="<?php echo get_template_directory_uri() ?>/src/assets/img/page/what.png" alt="" />
     </div>
-    <div class="about__img">
+    <div class="about__img l-img">
       <img src="<?php echo get_template_directory_uri() ?>/src/assets/img/page/trouble.png" alt="" />
     </div>
   </div>
@@ -95,7 +95,7 @@
 
 <section class="works delay l-works">
   <div class="works__inner inner">
-    <div class="works__img">
+    <div class="works__img l-img">
       <img src="<?php echo get_template_directory_uri() ?>/src/assets/img/page/strong_point.png" alt="">
     </div>
   </div>
@@ -111,7 +111,7 @@
 
 <section class="service delay l-service">
   <div class="service__inner inner">
-    <div class="service__img">
+    <div class="service__img l-img">
       <img src="<?php echo get_template_directory_uri() ?>/src/assets/img/page/service_quality.png" alt="" />
     </div>
   </div>
@@ -119,15 +119,15 @@
 
 <section class="plan delay l-plan">
   <div class="plan__inner inner">
-    <div class="plan__img">
+    <div class="plan__img l-img">
       <img src="<?php echo get_template_directory_uri() ?>/src/assets/img/page/possible.png" alt="" />
     </div>
   </div>
   <div class="plan__inner inner">
-    <div class="plan__img">
+    <div class="plan__img l-img">
       <img src="<?php echo get_template_directory_uri() ?>/src/assets/img/page/comparison_chart.png" alt="" />
     </div>
-    <div class="plan__img">
+    <div class="plan__img l-img">
       <img src="<?php echo get_template_directory_uri() ?>/src/assets/img/page/price.png" alt="" />
     </div>
   </div>
@@ -135,7 +135,7 @@
 
 <section class="flow delay l-flow">
   <div class="flow__inner inner">
-    <div class="flow__img">
+    <div class="flow__img l-img">
       <img src="<?php echo get_template_directory_uri() ?>/src/assets/img/page/flow.png" alt="" />
     </div>
   </div>
@@ -151,7 +151,7 @@
 
 <section class="introduction delay l-introduction">
   <div class="introduction__inner inner">
-    <div class="introduction__img">
+    <div class="introduction__img l-img">
       <img src="<?php echo get_template_directory_uri() ?>/src/assets/img/page/introduction.png" alt="" />
     </div>
   </div>
@@ -159,7 +159,7 @@
 
 <section class="greeting delay l-greeting">
   <div class="greeting__inner inner">
-    <div class="greeting__img">
+    <div class="greeting__img l-img">
       <img src="<?php echo get_template_directory_uri() ?>/src/assets/img/page/greeting.png" alt="" />
     </div>
   </div>
@@ -167,17 +167,21 @@
 
 <section class="faq delay l-faq">
   <div class="faq__inner inner">
-    <h2 class="p-faq__title">
+    <h2 class="p-faq__title l-img">
       <img src="<?php echo get_template_directory_uri() ?>/src/assets/img/page/faq_title.png" alt="" />
     </h2>
-    <ul class="p-faq__list p-faq-list">
+    <ul class="p-faq__list p-faq-list l-img">
       <li class="p-faq-list__item">
         <p class="p-faq-list__item-question js-faq-question">
           <img src="<?php echo get_template_directory_uri() ?>/src/assets/img/page/q1.png" alt="" />
         </p>
         <p class="p-faq-list__item-answer">
           <span>A.</span>
-          テキストテキストテキストテキストテキストテキストテキストテキストテキスト テキストテキストテキストテキストテキストテキストテキストテキストテキスト テキストテキストテキストテキストテキストテキストテキストテキストテキスト
+          テキストテキストテキストテキストテキストテキストテキ
+
+
+
+          ストテキストテキスト テキストテキストテキストテキストテキストテキストテキストテキストテキスト テキストテキストテキストテキストテキストテキストテキストテキストテキスト
         </p>
       </li>
       <li class="p-faq-list__item">

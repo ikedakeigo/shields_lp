@@ -1,0 +1,20 @@
+@use "../foundation" as *;
+
+.top {
+
+}
+
+
+.top__inner {
+  @include mq(md){
+    max-width:  rem(800) !important;
+  }
+}
+
+.inner {
+
+}
+
+.top__img {
+
+}

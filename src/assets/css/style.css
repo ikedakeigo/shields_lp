@@ -167,6 +167,15 @@ img {
   }
 }
 
+.l-img {
+  max-width: 100%;
+}
+@media screen and (min-width: 768px) {
+  .l-img {
+    margin: 0 auto;
+  }
+}
+
 /*==================================================
 遅延表示
 ===================================*/
@@ -1198,6 +1207,12 @@ img {
   .greeting__img {
     max-width: 31.25rem;
     margin: 0 auto;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .top__inner {
+    max-width: 50rem !important;
   }
 }
 /*# sourceMappingURL=style.css.map */
