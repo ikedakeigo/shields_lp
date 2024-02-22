@@ -1,7 +1,7 @@
 @use "../foundation" as *;
 
 .buttons-container {
-  position: fixed;
+  position: sticky;
   bottom: 0;
   right: 0;
   display: flex;
@@ -12,7 +12,7 @@
   @include mq(md){
     width: 60%;
     right: 50%;
-    transform: translateX(50%);
+    transform: translateX(35%);
   }
 }
 
@@ -21,12 +21,6 @@
   background-color: $color-white;
   transition: background-color 0.3s;
 }
-
-// .child {
-//   flex: 1;
-//   width: 50%;
-//   text-align: center;
-// }
 
 .follow-btn:hover {
   background-color: #0f5ec2;

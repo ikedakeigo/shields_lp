@@ -7,7 +7,7 @@
 
 .top__inner {
   @include mq(md){
-    max-width:  rem(800) !important;
+    max-width: 60% !important;
   }
 }
 

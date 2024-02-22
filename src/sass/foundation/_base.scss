@@ -91,7 +91,7 @@ img {
   }
 }
 
-.l-img{
+.l-img {
   max-width: 100%;
   @include mq(md) {
     // max-width: rem(700) !important;
@@ -149,4 +149,11 @@ img {
       transform: translate(0, 0);
     }
   }
+}
+
+/*===================================
+ * アスタリスク
+===================================*/
+.grid{
+  font-size:  rem(12);
 }

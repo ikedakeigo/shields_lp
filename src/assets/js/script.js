@@ -76,3 +76,18 @@ jQuery(function ($) {
     },
   });
 });
+
+
+
+
+// function adjustButtonContainer() {
+//   var footerHeight = document.getElementById('footer').offsetHeight;
+//   var buttonsContainer = document.querySelector('.buttons-container');
+//   buttonsContainer.style.bottom = footerHeight + 'px';
+// }
+
+// // ページ読み込み時に実行
+// adjustButtonContainer();
+
+// // ウィンドウサイズが変更されたときに実行
+// window.addEventListener('resize', adjustButtonContainer);

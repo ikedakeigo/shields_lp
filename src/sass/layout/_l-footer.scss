@@ -1,0 +1,31 @@
+@use "../foundation" as *;
+
+.l-footer {
+  padding: rem(45) 0;
+  background-color: #021f59;
+  min-height:  rem(100);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  @include mq(md){
+      padding: rem(30) 0 rem(20);
+  }
+}
+
+.l-footer__nav {
+  display: flex;
+  gap: rem(30);
+}
+
+.l-footer__nav-item {
+  color: #fff;
+  // font-size: rem(14);
+}
+
+.l-footer__nav-anchor {
+
+}
+
+.l-footer__copyright {
+
+}
