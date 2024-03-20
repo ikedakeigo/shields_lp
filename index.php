@@ -29,14 +29,14 @@
     <section class="top delay">
       <div class="top__inner inner">
         <div class="top__img">
-          <img src="<?php echo get_template_directory_uri() ?>/src/assets/img/page/fv.jpg" alt="" />
+          <img src="<?php echo get_template_directory_uri() ?>/src/assets/img/page/fv.png" alt="" />
         </div>
       </div>
     </section>
 
     <section class="contact delay ">
       <div class="contact__inner inner pt">
-        <a href="" class="contact__btn c-button _effect">
+        <a href="https://linevoom.line.me/user/_dUaMkQgDWC-xEwL6vSNT9dVVIW0iIWq4J3cOtc8" class="contact__btn c-button _effect" target="_blank">
           <img src="<?php echo get_template_directory_uri() ?>/src/assets/img/common/linebutton.png" alt="" />
         </a>
       </div>
@@ -54,22 +54,22 @@
               <div class="swiper js-voice-swiper">
                 <ul class="swiper-wrapper">
                   <li class="swiper-slide">
-                    <img src="<?php echo get_template_directory_uri() ?>/src/assets/img/page/voice_01.jpg" alt="お客様の声" />
+                    <img src="<?php echo get_template_directory_uri() ?>/src/assets/img/page/voice_01.png" alt="お客様の声" />
                   </li>
                   <li class="swiper-slide">
-                    <img src="<?php echo get_template_directory_uri() ?>/src/assets/img/page/voice_02.jpg" alt="お客様の声" />
+                    <img src="<?php echo get_template_directory_uri() ?>/src/assets/img/page/voice_02.png" alt="お客様の声" />
                   </li>
                   <li class="swiper-slide">
-                    <img src="<?php echo get_template_directory_uri() ?>/src/assets/img/page/voice_03.jpg" alt="お客様の声" />
+                    <img src="<?php echo get_template_directory_uri() ?>/src/assets/img/page/voice_03.png" alt="お客様の声" />
                   </li>
                   <li class="swiper-slide">
-                    <img src="<?php echo get_template_directory_uri() ?>/src/assets/img/page/voice_04.jpg" alt="お客様の声" />
+                    <img src="<?php echo get_template_directory_uri() ?>/src/assets/img/page/voice_04.png" alt="お客様の声" />
                   </li>
                   <li class="swiper-slide">
-                    <img src="<?php echo get_template_directory_uri() ?>/src/assets/img/page/voice_05.jpg" alt="お客様の声" />
+                    <img src="<?php echo get_template_directory_uri() ?>/src/assets/img/page/voice_05.png" alt="お客様の声" />
                   </li>
                   <li class="swiper-slide">
-                    <img src="<?php echo get_template_directory_uri() ?>/src/assets/img/page/voice_06.jpg" alt="お客様の声" />
+                    <img src="<?php echo get_template_directory_uri() ?>/src/assets/img/page/voice_06.png" alt="お客様の声" />
                   </li>
                 </ul>
               </div>
@@ -105,7 +105,7 @@
 
     <section class="contact delay">
       <div class="contact__inner inner">
-        <a href="" class="contact__btn c-button _effect">
+        <a href="https://linevoom.line.me/user/_dUaMkQgDWC-xEwL6vSNT9dVVIW0iIWq4J3cOtc8" class="contact__btn c-button _effect" target="_blank">
           <img src="<?php echo get_template_directory_uri() ?>/src/assets/img/common/linebutton.png" alt="" />
         </a>
       </div>
@@ -145,19 +145,19 @@
 
     <section class="contact delay">
       <div class="contact__inner inner">
-        <a href="" class="contact__btn c-button _effect">
+        <a href="https://linevoom.line.me/user/_dUaMkQgDWC-xEwL6vSNT9dVVIW0iIWq4J3cOtc8" class="contact__btn c-button _effect" target="_blank">
           <img src="<?php echo get_template_directory_uri() ?>/src/assets/img/common/linebutton.png" alt="" />
         </a>
       </div>
     </section>
 
-    <section class="introduction delay l-introduction">
+    <!-- <section class="introduction delay l-introduction">
       <div class="introduction__inner inner">
         <div class="introduction__img l-img">
           <img src="<?php echo get_template_directory_uri() ?>/src/assets/img/page/introduction.png" alt="" />
         </div>
       </div>
-    </section>
+    </section> -->
 
     <section class="greeting delay l-greeting">
       <div class="greeting__inner inner">
@@ -173,37 +173,45 @@
           <img src="<?php echo get_template_directory_uri() ?>/src/assets/img/page/faq_title.png" alt="" />
         </h2>
         <ul class="p-faq__list p-faq-list l-img">
+          <!--  Q1 -->
           <li class="p-faq-list__item">
             <p class="p-faq-list__item-question js-faq-question">
               <img src="<?php echo get_template_directory_uri() ?>/src/assets/img/page/q1.png" alt="" />
             </p>
             <p class="p-faq-list__item-answer">
               <span>A.</span>
-              テキストテキストテキストテキストテキストテキストテキ
 
-
-
-              ストテキストテキスト テキストテキストテキストテキストテキストテキストテキストテキストテキスト テキストテキストテキストテキストテキストテキストテキストテキストテキスト
             </p>
           </li>
+
+          <!-- Q2 -->
           <li class="p-faq-list__item">
             <p class="p-faq-list__item-question js-faq-question">
               <img src="<?php echo get_template_directory_uri() ?>/src/assets/img/page/q2.png" alt="" />
             </p>
             <p class="p-faq-list__item-answer">
               <span>A.</span>
-              テキストテキストテキストテキストテキストテキストテキストテキストテキスト テキストテキストテキストテキストテキストテキストテキストテキストテキスト テキストテキストテキストテキストテキストテキストテキストテキストテキスト
+              給与未払いは会社の違法行為となっています。<br>
+              その為、働かれた分の給与は必ず支給されます。<br>
+              退職金については、会社規定に記載されている受給条件をご本人様が満たしていれば必ず受け取れます。<br>
+              会社規定が分からない場合はNEXTキャリアから会社へお問合せ可能です。
             </p>
           </li>
+
+          <!-- Q3 -->
           <li class="p-faq-list__item">
             <p class="p-faq-list__item-question js-faq-question">
               <img src="<?php echo get_template_directory_uri() ?>/src/assets/img/page/q3.png" alt="" />
             </p>
             <p class="p-faq-list__item-answer">
               <span>A.</span>
-              テキストテキストテキストテキストテキストテキストテキストテキストテキスト テキストテキストテキストテキストテキストテキストテキストテキストテキスト テキストテキストテキストテキストテキストテキストテキストテキストテキスト
+              会社側には本人・ご両親へ連絡しないようにお伝えしますので連絡されることはありません。<br>
+              ただし、確実にそうしてもらえるかは会社側の判断になりますので、お約束できない点はご了承ください。<br>
+              できる限りサポートはさせていただきます
             </p>
           </li>
+
+          <!-- Q4 -->
           <li class="p-faq-list__item">
             <p class="p-faq-list__item-question js-faq-question">
               <img src="<?php echo get_template_directory_uri() ?>/src/assets/img/page/q4.png" alt="" />
@@ -214,6 +222,8 @@
               男の退職代行では、各タイミングなどの細かい部分までサポートさせていただいております。
             </p>
           </li>
+
+          <!-- Q5 -->
           <li class="p-faq-list__item">
             <p class="p-faq-list__item-question js-faq-question">
               <img src="<?php echo get_template_directory_uri() ?>/src/assets/img/page/q5.png" alt="" />
@@ -225,15 +235,20 @@
               しかし弁護士に依頼など数十万円のコストをかけて裁判をすることになる為まずありません。
             </p>
           </li>
+
+          <!-- Q6 -->
           <li class="p-faq-list__item">
             <p class="p-faq-list__item-question js-faq-question">
               <img src="<?php echo get_template_directory_uri() ?>/src/assets/img/page/q6.png" alt="" />
             </p>
             <p class="p-faq-list__item-answer">
               <span>A.</span>
-              テキストテキストテキストテキストテキストテキストテキストテキストテキスト テキストテキストテキストテキストテキストテキストテキストテキストテキスト テキストテキストテキストテキストテキストテキストテキストテキストテキスト
+              ご要望いただければ最短で即日（ご依頼当日）に、当日や翌日から出社したくない旨と併せて退職の意思を会社側に伝えて手続きいたします。<br>
+              ご不安なことがあれば何でもご気軽に公式ラインまでご相談くださいませ。
             </p>
           </li>
+
+          <!-- Q7 -->
           <li class="p-faq-list__item">
             <p class="p-faq-list__item-question js-faq-question">
               <img src="<?php echo get_template_directory_uri() ?>/src/assets/img/page/q7.png" alt="" />
@@ -259,7 +274,7 @@
 
     <section class="contact delay c-bottom">
       <div class="contact__inner inner">
-        <a href="" class="contact__btn c-button _effect">
+        <a href="https://linevoom.line.me/user/_dUaMkQgDWC-xEwL6vSNT9dVVIW0iIWq4J3cOtc8" class="contact__btn c-button _effect" target="_blank">
           <img src="<?php echo get_template_directory_uri() ?>/src/assets/img/common/linebutton.png" alt="" />
         </a>
       </div>
@@ -267,10 +282,10 @@
 
 
     <div class="buttons-container">
-      <a href="#" class="follow-btn child">
+      <a href="tel:08060520019" class="follow-btn child">
         <img src="<?php echo get_template_directory_uri() ?>/src/assets/img/page/telephone_button.png" alt="">
       </a>
-      <a href="#" class="follow-btn child">
+      <a href="https://linevoom.line.me/user/_dUaMkQgDWC-xEwL6vSNT9dVVIW0iIWq4J3cOtc8" class="follow-btn child" target="_blank">
         <img src="<?php echo get_template_directory_uri() ?>/src/assets/img/page/line_button.png" alt="">
       </a>
     </div>
@@ -279,8 +294,8 @@
 
   <footer class="l-footer" id="footer">
     <ul class="l-footer__nav">
-      <li class="l-footer__nav-item"><a class="l-footer__nav-anchor" href="/tokushoho/">特定商取引法に基づく表記</a></li>
-      <li class="l-footer__nav-item"><a class="l-footer__nav-anchor" href="/privacy/">プライバシーポリシー</a></li>
+      <li class="l-footer__nav-item"><a class="l-footer__nav-anchor" href="/tokushoho/" target="_blank">特定商取引法に基づく表記</a></li>
+      <li class="l-footer__nav-item"><a class="l-footer__nav-anchor" href="/privacy/" target="_blank">プライバシーポリシー</a></li>
     </ul>
   </footer>
 

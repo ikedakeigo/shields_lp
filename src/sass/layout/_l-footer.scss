@@ -3,18 +3,23 @@
 .l-footer {
   padding: rem(45) 0;
   background-color: #021f59;
-  min-height:  rem(100);
+  min-height: rem(100);
   display: flex;
   align-items: center;
   justify-content: center;
-  @include mq(md){
-      padding: rem(30) 0 rem(20);
+  @include mq(md) {
+    padding: rem(20) 0 rem(20);
   }
 }
 
 .l-footer__nav {
-  display: flex;
-  gap: rem(30);
+  text-align: center;
+  display: grid;
+  gap:  rem(10);
+  @include mq(md) {
+    display: flex;
+    gap: rem(30);
+  }
 }
 
 .l-footer__nav-item {
@@ -23,9 +28,8 @@
 }
 
 .l-footer__nav-anchor {
-
+  font-size: 0.9rem;
 }
 
 .l-footer__copyright {
-
 }

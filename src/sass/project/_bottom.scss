@@ -2,7 +2,9 @@
 
 .bottom__inner {
   margin-top: rem(50);
-  @include mq(md){
+  max-width: 100%;
+  @include mq(md) {
+    max-width: rem(650);
     margin-top: rem(150);
   }
 }

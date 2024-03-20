@@ -13,13 +13,19 @@
     position: absolute;
     width: 100%;
     display: block;
-    padding-top: aspect(1000, 195);
+    padding-top: aspect(1000, 400);
     background-size: cover;
     background-position: center;
     top: 0;
     left: 0;
     transform: translateY(-95%);
     z-index: -1;
+    @include mq(ssm) {
+      padding-top: aspect(1000, 330);
+    }
+    @include mq(md) {
+      padding-top: aspect(1000, 195);
+    }
   }
   &::after {
     content: "";
@@ -50,21 +56,22 @@
 .p-faq-list__item-answer {
   background-color: $color-white;
   padding: rem(20);
-  border: 1px solid $color-orange;
+  border: 3px solid #ff8519;
   border-radius: rem(8);
   display: none;
 }
 
 .p-faq__title {
+  max-width: 100%;
   @include mq(md) {
-    max-width: rem(500);
+    max-width: rem(650);
     margin: 0 auto;
   }
 }
 .p-faq__list {
   max-width: 100%;
   @include mq(md) {
-    max-width: rem(500);
+    max-width: rem(650);
     margin: 0 auto;
   }
 }

@@ -1,8 +1,8 @@
 @use "../foundation" as *;
 
 .l-flow {
-  // margin-top: rem(-20);
-  margin-bottom: rem(50);
+  margin-top: rem(-20);
+  margin-bottom: rem(75);
   @include mq(md) {
     margin-top: rem(100);
     margin-bottom: rem(250);
