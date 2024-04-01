@@ -98,6 +98,20 @@ img {
     margin: 0 auto;
   }
 }
+
+.forPC {
+  display: none;
+  @include mq(md) {
+    display: block;
+  }
+}
+
+.forSP {
+  display: block;
+  @include mq(md) {
+    display: none;
+  }
+}
 /*==================================================
 遅延表示
 ===================================*/
@@ -154,6 +168,6 @@ img {
 /*===================================
  * アスタリスク
 ===================================*/
-.grid{
-  font-size:  rem(12);
+.grid {
+  font-size: rem(12);
 }

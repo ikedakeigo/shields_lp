@@ -1,8 +1,8 @@
 @use "../foundation" as *;
 
 .l-about {
-  margin-bottom: rem(100);
-  @include mq(md){
-    margin-bottom: rem(200);
+  margin-bottom: clamp(rem(10), 5vw, rem(100));
+  @include mq(md) {
+    margin-bottom: rem(150);
   }
 }

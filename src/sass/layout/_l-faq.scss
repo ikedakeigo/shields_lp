@@ -2,7 +2,7 @@
 
 .l-faq {
   // margin-top: rem(-20);
-  margin-bottom: rem(110);
+  margin-bottom: clamp(rem(50), 20vw, rem(110));
   @include mq(md) {
     margin-top: rem(100);
     margin-bottom: rem(250);

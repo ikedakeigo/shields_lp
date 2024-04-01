@@ -1,11 +1,9 @@
 @use "../foundation" as *;
 
 .l-plan {
-  // margin-top: rem(-20);
-  // margin-bottom: rem(150);
-margin-bottom: rem(100);
+margin-bottom: clamp(rem(20), 20vw, rem(100));
   @include mq(ssm) {
-    margin-top: rem(-20);
+    margin-bottom: clamp(rem(20), 30vw, rem(100));
   }
   @include mq(md) {
     margin-top: rem(100);

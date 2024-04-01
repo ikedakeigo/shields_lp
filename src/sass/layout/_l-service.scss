@@ -1,15 +1,15 @@
 @use "../foundation" as *;
 
 .l-service {
-  margin-bottom: rem(100);
-  // @include mq(ssm){
-  //   margin-bottom: rem(140);
+  margin-bottom: clamp(rem(50), 26vw, rem(230));
+  // @include mq(ssm) {
+  //   margin-bottom: rem(200);
   // }
-  @include mq(ssm) {
-    margin-bottom: rem(180);
-  }
   @include mq(md) {
     margin-top: rem(100);
-    margin-bottom: rem(225);
+    margin-bottom: rem(230);
   }
+}
+
+.bg_img {
 }

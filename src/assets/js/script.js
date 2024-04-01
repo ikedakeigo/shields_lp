@@ -54,7 +54,7 @@ jQuery(function ($) {
     spaceBetween: 10,
     centeredSlides: true,
     autoplay: {
-      delay: 2000,
+      delay: 5000,
       disableOnInteraction: false,
     },
     breakpoints: {

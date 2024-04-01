@@ -29,7 +29,8 @@
     <section class="top delay">
       <div class="top__inner inner">
         <div class="top__img">
-          <img src="<?php echo get_template_directory_uri() ?>/src/assets/img/page/fv.png" alt="" />
+          <img src="<?php echo get_template_directory_uri() ?>/src/assets/img/page/fv.png" class="forPC" alt="" />
+          <img src="<?php echo get_template_directory_uri() ?>/src/assets/img/page/fv_sp.png" class="forSP" alt="" />
         </div>
       </div>
     </section>
@@ -180,7 +181,8 @@
             </p>
             <p class="p-faq-list__item-answer">
               <span>A.</span>
-
+              当社では労働組合提携・弁護士監修・株式会社の管理を行っているため法律に則って運営しており違法ではありません。<br>
+違法な業者は労働組合や弁護士以外が法律に関わる事(非弁行為)を行った場合に違法となっています。
             </p>
           </li>
 

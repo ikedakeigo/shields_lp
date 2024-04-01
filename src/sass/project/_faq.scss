@@ -59,10 +59,16 @@
   border: 3px solid #ff8519;
   border-radius: rem(8);
   display: none;
+  font-weight: bold;
+
+  span{
+    color: #ff8519;
+  }
 }
 
 .p-faq__title {
   max-width: 100%;
+  margin-bottom: rem(20);
   @include mq(md) {
     max-width: rem(650);
     margin: 0 auto;

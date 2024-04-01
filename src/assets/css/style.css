@@ -176,6 +176,24 @@ img {
   }
 }
 
+.forPC {
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  .forPC {
+    display: block;
+  }
+}
+
+.forSP {
+  display: block;
+}
+@media screen and (min-width: 768px) {
+  .forSP {
+    display: none;
+  }
+}
+
 /*==================================================
 遅延表示
 ===================================*/
@@ -358,12 +376,12 @@ img {
 }
 
 .l-about {
-  margin-bottom: 100px;
-  margin-bottom: 6.25rem;
+  margin-bottom: clamp(10px, 5vw, 100px);
+  margin-bottom: clamp(0.625rem, 5vw, 6.25rem);
 }
 @media screen and (min-width: 768px) {
   .l-about {
-    margin-bottom: 12.5rem;
+    margin-bottom: 9.375rem;
   }
 }
 
@@ -378,28 +396,23 @@ img {
 }
 
 .l-service {
-  margin-bottom: 100px;
-  margin-bottom: 6.25rem;
-}
-@media screen and (min-width: 500px) {
-  .l-service {
-    margin-bottom: 11.25rem;
-  }
+  margin-bottom: clamp(50px, 26vw, 230px);
+  margin-bottom: clamp(3.125rem, 26vw, 14.375rem);
 }
 @media screen and (min-width: 768px) {
   .l-service {
     margin-top: 6.25rem;
-    margin-bottom: 14.0625rem;
+    margin-bottom: 14.375rem;
   }
 }
 
 .l-plan {
-  margin-bottom: 100px;
-  margin-bottom: 6.25rem;
+  margin-bottom: clamp(20px, 20vw, 100px);
+  margin-bottom: clamp(1.25rem, 20vw, 6.25rem);
 }
 @media screen and (min-width: 500px) {
   .l-plan {
-    margin-top: -1.25rem;
+    margin-bottom: clamp(1.25rem, 30vw, 6.25rem);
   }
 }
 @media screen and (min-width: 768px) {
@@ -423,8 +436,8 @@ img {
 }
 
 .l-faq {
-  margin-bottom: 110px;
-  margin-bottom: 6.875rem;
+  margin-bottom: clamp(50px, 20vw, 110px);
+  margin-bottom: clamp(3.125rem, 20vw, 6.875rem);
 }
 @media screen and (min-width: 768px) {
   .l-faq {
@@ -449,7 +462,12 @@ img {
 }
 @media screen and (min-width: 500px) {
   .l-greeting {
-    margin-bottom: 11.25rem;
+    margin-bottom: clamp(1.25rem, 30vw, 11.25rem);
+  }
+}
+@media screen and (min-width: 500px) {
+  .l-greeting {
+    margin-bottom: clamp(1.25rem, 30vw, 11.25rem);
   }
 }
 @media screen and (min-width: 768px) {
@@ -576,6 +594,11 @@ img {
   position: relative;
   z-index: 2;
 }
+@media screen and (min-width: 768px) {
+  .contact__inner {
+    max-width: 40.625rem;
+  }
+}
 .contact__inner.pt {
   padding-top: 20px;
   padding-top: 1.25rem;
@@ -607,11 +630,6 @@ img {
   transition: 300ms;
   -webkit-animation: effecteffect 2.5s ease-in-out infinite;
           animation: effecteffect 2.5s ease-in-out infinite;
-}
-
-.c-button._effect:hover {
-  -webkit-transform: translateY(3px);
-          transform: translateY(3px);
 }
 
 @-webkit-keyframes effecteffect {
@@ -1063,10 +1081,16 @@ img {
   border: 3px solid #ff8519;
   border-radius: 0.5rem;
   display: none;
+  font-weight: bold;
+}
+.p-faq-list__item-answer span {
+  color: #ff8519;
 }
 
 .p-faq__title {
   max-width: 100%;
+  margin-bottom: 20px;
+  margin-bottom: 1.25rem;
 }
 @media screen and (min-width: 768px) {
   .p-faq__title {
@@ -1361,12 +1385,9 @@ img {
   }
 }
 
-@media screen and (min-width: 768px) {
-  .top__inner {
-    max-width: 60% !important;
-  }
+.top__inner {
+  max-width: 100%;
 }
-
 .p-privacy-policy__container {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;

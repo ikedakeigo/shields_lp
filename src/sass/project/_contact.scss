@@ -13,9 +13,14 @@
   position: relative;
   z-index: 2;
 
+  @include mq(md){
+    max-width: rem(650);
+  }
+
   &.pt {
     padding-top: rem(20);
   }
+
 }
 
 /*===================================
@@ -43,7 +48,7 @@
 }
 
 .c-button._effect:hover {
-  transform: translateY(3px);
+
 }
 
 @keyframes effecteffect {

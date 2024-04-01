@@ -2,8 +2,12 @@
 
 .l-greeting {
   margin-bottom: rem(140);
-  @include mq(ssm){
-    margin-bottom: rem(180);
+  @include mq(ssm) {
+    margin-bottom: clamp(rem(20), 30vw, rem(180));
+  }
+  @include mq(ssm) {
+    // margin-bottom: rem(180);
+    margin-bottom: clamp(rem(20), 30vw, rem(180));
   }
   @include mq(md) {
     margin-top: rem(100);
